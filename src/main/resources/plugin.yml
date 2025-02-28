@@ -1,0 +1,17 @@
+name: SimpleSpawnpointDeployment
+version: '1.0'
+main: nsk.nu.S.SD.SimpleSpawnpointDeployment
+api-version: '1.20'
+prefix: SSD
+authors: [ Miciasty ]
+
+commands:
+    sda:
+        description: Administrative command for Simple Spawnpoint Deployment.
+        aliases: [sda]
+        usage: /sda <invite/add/remove/start> <*/player>
+
+    sdi:
+        description: Administrative command to get spawnpoint selector.
+        aliases: [sdi]
+        usage: /sdi <player>
