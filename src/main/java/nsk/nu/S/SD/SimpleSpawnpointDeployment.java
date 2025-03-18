@@ -33,7 +33,9 @@ public final class SimpleSpawnpointDeployment extends JavaPlugin {
 
         PluginCommand sda = this.getCommand("sda");
         if (sda != null) {
-            sda.setExecutor(new SDACommand());
+            SDACommand sdaCommand = new SDACommand();
+            sda.setExecutor(sdaCommand);
+            sda.setTabCompleter(sdaCommand);
             logger.fine("Command 'sda' registered.");
         } else {
             logger.severe("Command 'sda' not registered.");
